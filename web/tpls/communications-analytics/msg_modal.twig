@@ -1,0 +1,25 @@
+<h2 class="modal-body__caption yandex-taxi-communications-analytics__modal_header">
+    Настройки почты для групп
+</h2>
+<div class="yandex-taxi-communications-analytics__modal_sub-header">Можно ввести несколько адресов для каждой группы</div>
+<div class="yandex-taxi-communications-analytics__modal_body">
+    <table>
+        {% for field in groups %}
+            <tr>
+                <td>{{ field.option }}</td>
+                <td class="yandex-taxi-communications-analytics__modal_cell">
+                    <input type="text" class="yandex-taxi-communications-analytics__modal_input linked-form__cf text-input"
+                           placeholder="..." id="{{ field.id }}">
+                </td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+<div class="widget_settings_block__controls">
+    {% set saveButton = {
+        'text': 'Сохранить',
+        'id': 'yandex-taxi-communications-analytics_approval-button',
+        'class_name':'yandex-taxi-communications-analytics__button_inactive'
+    } %}
+    {% include '/tmpl/controls/button.twig' with saveButton %}
+</div>

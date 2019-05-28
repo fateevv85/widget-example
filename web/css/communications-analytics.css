@@ -1,0 +1,112 @@
+.test-taxi-communications-analytics__widget-field {
+    margin-bottom: 30px;
+}
+
+/*dropdown выбора периодов*/
+.test-taxi-communications-analytics__range-select_input-field {
+    /*float: right;*/
+    display: inline-block;
+}
+
+/*кнопка выбора периода*/
+.test-taxi-communications-analytics__range-select .control--select--button {
+    width: 127px;
+    /*height: 39px;*/
+}
+
+.test-taxi-communications-analytics__range-select_input-range {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.test-taxi-communications-analytics__input-range_sub-title {
+    display: inline-block;
+    /*margin-right: 2%;*/
+    /*margin-left: 49%;*/
+}
+
+.test-taxi-communications-analytics__input-range_picker {
+    /*margin-left: 11%;*/
+    width: 70px;
+    /*padding: 8px 8px 7px;*/
+    text-align: center;
+}
+
+.test-taxi-communications-analytics__input-range_after-title {
+    /*margin-left: 2%;*/
+    display: inline-block;
+    width: 32px;
+}
+
+/*скрываем список значений периодов*/
+.test-taxi-communications-analytics__range-select .custom-scroll.control--select--list {
+    display: none;
+}
+
+.test-taxi-communications-analytics_hidden {
+    visibility: hidden;
+}
+
+.test-taxi-communications-analytics__modal_header {
+    font-weight: bold;
+    font-size: large;
+    margin-bottom: 0;
+}
+
+.test-taxi-communications-analytics__modal_sub-header {
+    font-size: small;
+}
+
+.test-taxi-communications-analytics__modal_body {
+    margin-top: 20px;
+}
+
+.test-taxi-communications-analytics__modal_input {
+    user-select: text;
+    outline: none;
+    line-height: 20px;
+    box-sizing: border-box;
+    color: #313942;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-left: 0;
+    border-right: 0;
+    /* border-radius: 0; */
+    max-width: 299px;
+    padding: 0;
+    height: 32px;
+    border-radius: 0;
+    width: 100%;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.test-taxi-communications-analytics__modal_input:focus {
+    border-bottom-color: #4c8bf7;
+}
+
+.test-taxi-communications-analytics__modal_cell {
+    padding-left: 10px;
+}
+
+.test-taxi-communications-analytics__button_inactive {
+    pointer-events: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #92989b;
+    background: 0 0;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    line-height: 14px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+#export_save_button {
+    height: 39px;
+    margin-left: 10px;
+}

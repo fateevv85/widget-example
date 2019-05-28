@@ -1,0 +1,47 @@
+<div class="yandex-taxi-communications-analytics__wrapper">
+
+    <div class="yandex-taxi-communications-analytics__range-select yandex-taxi-communications-analytics__widget-field">
+        <div class="yandex-taxi-communications-analytics__range-select_input-title modal-body__caption head_2">
+            Период выгрузки:
+        </div>
+        {% include '/tmpl/controls/select.twig' with selectPeriod %}
+        <div class="yandex-taxi-communications-analytics__range-select_input-range yandex-taxi-communications-analytics_hidden">
+            <div class="yandex-taxi-communications-analytics__input-range_sub-title">
+                Раз в
+            </div>
+            {#<input type="number"#}
+            <input type="tel"
+                   class="yandex-taxi-communications-analytics__input-range_picker js-control-allow-numeric-float text-input"
+                   min="1" title="Введите произвольный период">
+            <div class="yandex-taxi-communications-analytics__input-range_after-title">
+                дней
+            </div>
+        </div>
+    </div>
+
+    <div class="yandex-taxi-communications-analytics__group-select yandex-taxi-communications-analytics__widget-field">
+        <div class="yandex-taxi-communications-analytics__group-select_title modal-body__caption head_2">
+            Выгружать для отделов:
+        </div>
+        {% include '/tmpl/controls/checkboxes_dropdown.twig' with selectGroup %}
+    </div>
+
+    {#<div class="yandex-taxi-communications-analytics__email-settings modal-body__caption head_2">
+        Настройки почты для групп
+        {% include '/intr/events-export-yandex-taxi/msg_modal.twig' with groups %}
+        #}{#<div class="yandex-taxi-communications-analytics__email-settings_pencil icon icon-inline icon-pencil"></div>#}{#
+    </div>#}
+
+    <div class="yandex-taxi-communications-analytics__email-settings yandex-taxi-communications-analytics__widget-field">
+        {% set saveButton = {
+            'text': 'Настройки почты для групп',
+            'id': 'yandex-taxi-communications-analytics_email-settings',
+            'class_name':'yandex-taxi-communications-analytics__email-settings_button-config button-input_white'
+        } %}
+        {% include '/tmpl/controls/button.twig' with saveButton %}
+    </div>
+
+    {#<div class="yandex-taxi-communications-analytics__main-save-button">
+        {% include '/tmpl/controls/button.twig' with mainSaveButton %}
+    </div>#}
+</div>
